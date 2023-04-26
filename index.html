@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Ihor Zakharko</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/icon">
+</head>
+<body>
+    <header id="home">
+        <div class="burger-menu" id="burger-menu" onclick="toggleBurgerMenu()">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="nav-mobile" id="nav" onclick="toggleBurgerMenu()">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#history">History</a>
+            <a href="#services">Services</a>
+            <a href="#contacts">Contacts</a>
+        </div>
+
+        <div class="container">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#history">History</a>
+                <a href="#contacts">Contacts</a>
+            </nav>
+            <div class="header">
+                <div class="header-bg"></div>
+                <div class="header-skew-box"></div>
+                <div class="header-text">
+                    Technical Support Engineer / QA-QC Engineer 
+                    <h2 class="mt-25">Ihor<br>Zakharko</h2>
+                    <a href="#contacts" class="btn mt-50 header-btn">Contact me</a>
+                </div>
+                <div class="header-social">
+                    <a href="https://www.linkedin.com/in/ihor-zakharko-2ab65b49/" target="_blank"><img src="img/linkedin.svg"></a>
+                    <a href="https://www.facebook.com/ihor.zak" target="_blank"><img src="img/facebook.svg"></a>
+                    <a href="https://www.instagram.com/ihor.e/" target="_blank"><img src="img/instagram.svg"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div>
+            <h2>About</h2>
+            <div class="container">
+                <div class="about">
+                    <div>
+                        <img src="img/about-photo.png">
+                    </div>
+                    <div>
+                        <p>10+ years of experience in technical areas: acoustic, low-current, security systems, network and dental equipment.</p>
+                        <p>The path from preparation and installation to training and service.</p>
+                        <p>In search of a vacancy where he could learn new skills and effectively use existing ones.</p>
+                        <h3 class="text-left">My skills:</h3>
+                        <ul>
+                            <li>Communication with the support of the manufacturer and customers</li>
+                            <li>Presentations, exhibitions and events</li>
+                            <li>Planning and training for service engineers</li>
+                            <li>Maintaining supporting documentation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="history">
+        <div>
+            <h2>History</h2>
+            <div class="container">
+                <div class="flex-center">
+                    <div class="history">
+                        <div class="history-item">
+                            <div>
+                                Service Engineer
+                                <b>UltraHorizont</b>
+                            </div>
+                            <div>
+                                2011
+                            </div>
+                        </div>
+
+                        <div class="history-item">
+                            <div>
+                                Technical Specialist
+                                <b>EFFORT</b>
+                            </div>
+                            <div>
+                                2013
+                            </div>
+                        </div>
+
+                        <div class="history-item">
+                            <div>
+                                Technical Specialist
+                                <b>Astra Internet Service Provider</b>
+                            </div>
+                            <div>
+                                2016
+                            </div>
+                        </div>
+
+                        <div class="history-item">
+                            <div>
+                                Technical Support Engineer
+                                <b>INSPE</b>
+                            </div>
+                            <div>
+                                2018
+                            </div>
+                        </div>
+
+                        <div class="history-item">
+                            <img src="img/rocket.svg" class="rocket">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div>
+            <h2>Contacts</h2>
+            <div class="container text-center">
+                <div>
+                    <a href="mailto:izakharko@gmail.com?Subject=Hello" class="link" target="_blank">izakharko@gmail.com</a>
+                </div>
+                <div>
+                    <a href="/IhorZakharkoCV.pdf" target="_blank" class="btn mt-50 mb-50"><img src="img/download.svg">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <a href="#home" class="top">&uarr;</a>
+
+    <script>
+        function toggleBurgerMenu() {
+            var nav = document.getElementById('nav');
+            var menu = document.getElementById('burger-menu');
+            nav.style.transition = '0.25s ease transform';
+            nav.classList.toggle('open');
+            menu.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
